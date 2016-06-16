@@ -75,6 +75,7 @@ public class ReactVideoView extends ScalableVideoView implements MediaPlayer.OnP
     private float mVolume = 1.0f;
     private float mRate = 1.0f;
     private boolean mPlayInBackground = false;
+    private boolean mWasPlayingBeforeHostPause;
 
     private boolean mMediaPlayerValid = false; // True if mMediaPlayer is in prepared, started, or paused state.
     private int mVideoDuration = 0;
@@ -85,7 +86,9 @@ public class ReactVideoView extends ScalableVideoView implements MediaPlayer.OnP
 
         mThemedReactContext = themedReactContext;
         mEventEmitter = themedReactContext.getJSModule(RCTEventEmitter.class);
-        themedReactContext.addLifecycleEventListener(this);
+
+        // Log.i("ReactVideo", "addListener for " + hashCode());
+        mThemedReactContext.addLifecycleEventListener(this);
 
         initializeMediaPlayerIfNeeded();
         setSurfaceTextureListener(this);
@@ -323,6 +326,8 @@ public class ReactVideoView extends ScalableVideoView implements MediaPlayer.OnP
     @Override
     protected void onDetachedFromWindow() {
         mMediaPlayerValid = false;
+        // Log.i("ReactVideo", "removeListener for " + hashCode());
+        mThemedReactContext.removeLifecycleEventListener(this);
         super.onDetachedFromWindow();
     }
 
@@ -334,13 +339,21 @@ public class ReactVideoView extends ScalableVideoView implements MediaPlayer.OnP
 
     @Override
     public void onHostPause() {
-        if (mMediaPlayer != null && !mPlayInBackground) {
-            mMediaPlayer.pause();
+        if (mMediaPlayer != null) {
+            mWasPlayingBeforeHostPause = mMediaPlayer.isPlaying();
+            if (!mPlayInBackground) {
+                mMediaPlayer.pause();
+            }
         }
+        // Log.i("ReactVideo", "onHostPause for " + hashCode());
     }
 
     @Override 
     public void onHostResume() {
+        if (mMediaPlayer != null && mWasPlayingBeforeHostPause) {
+            mMediaPlayer.start();
+        }
+        // Log.i("ReactVideo", "onHostResume for " + hashCode());
     }
 
     @Override

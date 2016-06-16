@@ -8,3 +8,8 @@ npm-debug.log
 .DS_Store
 build/
 .gradle/
+*.iml
+.idea
+
+.*.swp
+.#*
