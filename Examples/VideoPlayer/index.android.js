@@ -14,6 +14,8 @@ import {
 
 import Video from 'react-native-video';
 
+const kVideoUri = 'broadchurch';
+
 class VideoPlayer extends Component {
   constructor(props) {
     super(props);
@@ -89,7 +91,7 @@ class VideoPlayer extends Component {
     return (
       <View style={styles.container}>
         <TouchableOpacity style={styles.fullScreen} onPress={() => {this.setState({paused: !this.state.paused})}}>
-          <Video source={{uri: "broadchurch"}}
+          <Video source={{uri: kVideoUri}}
                  style={styles.fullScreen}
                  rate={this.state.rate}
                  paused={this.state.paused}
@@ -207,4 +209,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('VideoPlayer', () => VideoPlayer);
+AppRegistry.registerComponent('Example', () => VideoPlayer);

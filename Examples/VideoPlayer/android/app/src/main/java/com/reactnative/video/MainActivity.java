@@ -1,4 +1,4 @@
-package com.videoplayer;
+package com.reactnative.video;
 
 import com.facebook.react.ReactActivity;
 import com.brentvatne.react.ReactVideoPackage;
@@ -16,7 +16,7 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "VideoPlayer";
+        return "Example";
     }
 
     /**
@@ -25,7 +25,7 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected boolean getUseDeveloperSupport() {
-        return BuildConfig.DEBUG;
+        return true;
     }
 
    /**

@@ -1,0 +1,40 @@
+PODS:
+  - React (0.28.0):
+    - React/Core (= 0.28.0)
+  - react-native-video (0.8.0):
+    - React
+  - React/Core (0.28.0)
+  - React/RCTImage (0.28.0):
+    - React/Core
+    - React/RCTNetwork
+  - React/RCTLinkingIOS (0.28.0):
+    - React/Core
+  - React/RCTNetwork (0.28.0):
+    - React/Core
+  - React/RCTText (0.28.0):
+    - React/Core
+  - React/RCTWebSocket (0.28.0):
+    - React/Core
+
+DEPENDENCIES:
+  - react-native-video (from `../../../`)
+  - React/Core (from `../node_modules/react-native`)
+  - React/RCTImage (from `../node_modules/react-native`)
+  - React/RCTLinkingIOS (from `../node_modules/react-native`)
+  - React/RCTNetwork (from `../node_modules/react-native`)
+  - React/RCTText (from `../node_modules/react-native`)
+  - React/RCTWebSocket (from `../node_modules/react-native`)
+
+EXTERNAL SOURCES:
+  React:
+    :path: ../node_modules/react-native
+  react-native-video:
+    :path: ../../../
+
+SPEC CHECKSUMS:
+  React: 43544faed4af6a0e8fbc4b3abd26141ed654fa49
+  react-native-video: b82ba98b406313a3ae4288aa4cc4bbf288956374
+
+PODFILE CHECKSUM: bac157209b69a56df8adc05893d3c30e284caaa7
+
+COCOAPODS: 1.0.1
