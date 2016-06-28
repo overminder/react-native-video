@@ -17,7 +17,7 @@ PODS:
     - React/Core
 
 DEPENDENCIES:
-  - react-native-video (from `../../../`)
+  - react-native-video (from `../../`)
   - React/Core (from `../node_modules/react-native`)
   - React/RCTImage (from `../node_modules/react-native`)
   - React/RCTLinkingIOS (from `../node_modules/react-native`)
@@ -29,12 +29,12 @@ EXTERNAL SOURCES:
   React:
     :path: ../node_modules/react-native
   react-native-video:
-    :path: ../../../
+    :path: ../../
 
 SPEC CHECKSUMS:
   React: 43544faed4af6a0e8fbc4b3abd26141ed654fa49
-  react-native-video: b82ba98b406313a3ae4288aa4cc4bbf288956374
+  react-native-video: fbd932a8cd95fa55bfe469cf87d445e2642a0760
 
-PODFILE CHECKSUM: bac157209b69a56df8adc05893d3c30e284caaa7
+PODFILE CHECKSUM: d61d196433218b9af10dae7b931cd0192bbdc4e1
 
 COCOAPODS: 1.0.1

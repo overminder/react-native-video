@@ -10,7 +10,7 @@ abstract_target 'defaults' do
   target 'RNSomeLibExample'
 
   # This.
-  pod 'react-native-video', :path => '../../../'
+  pod 'react-native-video', :path => '../../'
 
   # ReactNative dependencies. See
   # https://facebook.github.io/react-native/docs/embedded-app-ios.html
