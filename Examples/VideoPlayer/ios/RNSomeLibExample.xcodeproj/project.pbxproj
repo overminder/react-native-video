@@ -20,7 +20,7 @@
 		0DCEFA953B16F1AA59D79D12 /* Pods-defaults-RNSomeLibExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-RNSomeLibExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-defaults-RNSomeLibExample/Pods-defaults-RNSomeLibExample.debug.xcconfig"; sourceTree = "<group>"; };
 		434E11541CD0C34A007BDC3A /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
 		43B6D1B71D21293D000A9C56 /* broadchurch.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = broadchurch.mp4; path = ../broadchurch.mp4; sourceTree = "<group>"; };
-		43C520B51CCDC6CD005A20AE /* RNAdMobExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RNAdMobExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43C520B51CCDC6CD005A20AE /* RNVideo Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RNVideo Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43C520B81CCDC6CD005A20AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43C520BA1CCDC6CD005A20AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		43C520BD1CCDC6CD005A20AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 		43C520B61CCDC6CD005A20AE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				43C520B51CCDC6CD005A20AE /* RNAdMobExample.app */,
+				43C520B51CCDC6CD005A20AE /* RNVideo Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,7 +136,7 @@
 			);
 			name = RNSomeLibExample;
 			productName = RNVuforia;
-			productReference = 43C520B51CCDC6CD005A20AE /* RNAdMobExample.app */;
+			productReference = 43C520B51CCDC6CD005A20AE /* RNVideo Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -362,7 +362,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reactnative.VideoPlayer;
-				PRODUCT_NAME = RNAdMobExample;
+				PRODUCT_NAME = "RNVideo Example";
 				SWIFT_OBJC_BRIDGING_HEADER = Source/BridgeHeader.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -379,7 +379,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.reactnative.VideoPlayer;
-				PRODUCT_NAME = RNAdMobExample;
+				PRODUCT_NAME = "RNVideo Example";
 				SWIFT_OBJC_BRIDGING_HEADER = Source/BridgeHeader.h;
 			};
 			name = Release;
