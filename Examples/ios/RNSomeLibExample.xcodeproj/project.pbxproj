@@ -151,6 +151,7 @@
 				TargetAttributes = {
 					43C520B41CCDC6CD005A20AE = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -365,6 +366,7 @@
 				PRODUCT_NAME = "RNVideo Example";
 				SWIFT_OBJC_BRIDGING_HEADER = Source/BridgeHeader.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -381,6 +383,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.reactnative.VideoPlayer;
 				PRODUCT_NAME = "RNVideo Example";
 				SWIFT_OBJC_BRIDGING_HEADER = Source/BridgeHeader.h;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
